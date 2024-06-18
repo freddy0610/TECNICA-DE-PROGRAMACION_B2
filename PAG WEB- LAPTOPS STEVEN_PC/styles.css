@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #04fd0c;
+}
+
+header {
+    background-color: #6718c0;
+    color: #9af630;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #51ff00;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.producto {
+    border: 1px solid #6f30c8;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.producto img {
+    max-width: 100%;
+    width: 165px;
+    height: auto;
+    display: block;
+    float: left; /* Alinea la imagen a la izquierda */
+    margin-right: 10px; /* Añade un margen a la derecha para separarla del texto */
+}
+.detalle-laptop {
+    background-color: #ffffffec;
+    padding: 10px;
+    margin-bottom: 100px;
+    border: 1px solid #9900ff;
+    
+}
+
+
+footer {
+    background-color: #622fda;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+

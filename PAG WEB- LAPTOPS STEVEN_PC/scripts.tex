@@ -1,0 +1,42 @@
+**scripts.js**
+El javascript sirve para mejorar la experiencia del usuario al proporcionar mensajes
+de alerta cuando se añade un producto al carrito y cuando se envía el formulario de 
+contacto, asegurando una interacción más fluida y amigable en la tienda en línea.
+
+*DOMContentLoaded Event Listener:*
+Este bloque de código espera a que el documento HTML se haya cargado completamente 
+antes de ejecutar cualquier código JavaScript. Especificado por 'DOMContentLoaded',
+asegura que el script se ejecute solo cuando todos los elementos del DOM están 
+disponibles para ser manipulados.
+
+
+*Selección de Botones de Compra:*
+document.querySelectorAll('button') selecciona todos los elementos <button> en el 
+documento y los almacena en la variable botonesComprar. Esto permite interactuar
+con todos los botones que pueden añadir productos al carrito.
+
+
+*Añadir Event Listeners a los Botones:*
+botonesComprar.forEach(function(boton) { ... }); itera sobre cada botón seleccionado. 
+Para cada botón, se añade un event listener que escucha el evento 'click'.
+Cuando se hace clic en cualquier botón de compra (<button>), se muestra un mensaje de
+alerta que indica "Producto añadido al carrito." Esto simula la acción de añadir un
+producto al carrito.
+
+
+*Formulario de Contacto:*
+const formularioContacto = document.getElementById('contacto-form'); selecciona el 
+formulario de contacto por su ID, 'contacto-form'.
+
+if (formularioContacto) { ... } verifica si el formulario existe antes de añadir un 
+event listener. Esto evita errores si el formulario no está presente en la página.
+
+formularioContacto.addEventListener('submit', function(event) { ... }); añade un
+event listener para el evento 'submit' del formulario. Cuando el usuario envía
+el formulario (presionando el botón de enviar), se ejecuta la función callback.
+
+event.preventDefault(); evita que el formulario se envíe de manera convencional, 
+lo que refrescaría la página.
+
+alert('Formulario enviado. Nos pondremos en contacto contigo pronto.'); muestra un mensaje 
+de alerta que confirma al usuario que el formulario ha sido enviado correctamente.

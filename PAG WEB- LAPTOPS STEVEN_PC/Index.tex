@@ -1,0 +1,105 @@
+**Index.html**
+El HTML ayuda a estructurar mi tienda en línea para laptops "STEVEN PC" con
+secciones bien definidas para navegar como la bienvenida, la descripción,
+ver productos, añadir productos al carrito y contactar a la tienda.
+
+-<!DOCTYPE html>: Esto indica al navegador que el documento es un HTML5,
+el estándar más reciente de HTML.
+
+-<html lang="es">: Define que el idioma principal del documento es español (es).
+
+-<head>: Aquí empieza la sección de metadatos y enlaces a recursos externos.
+
+-<meta charset="UTF-8">: Especifica que el documento está codificado en UTF-8, 
+que incluye caracteres especiales como letras acentuadas.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Ayuda a 
+que el diseño del sitio web se adapte correctamente a diferentes tamaños de
+pantalla, como los de dispositivos móviles.
+
+<title>Tienda de Laptops</title>: Define el título de la página 
+que aparecerá en la pestaña del navegador.
+
+<link rel="stylesheet" href="styles.css">: Enlaza la hoja de estilos
+externa styles.css para aplicar estilos al contenido HTML.
+
+<body>: Inicia el cuerpo del documento HTML donde se encuentra 
+el contenido visible de la página.
+
+<header>: Define la cabecera de la página, que generalmente contiene
+el título principal y la navegación.
+
+<h1>Tienda de Laptops "STEVEN PC"</h1>: Es el título principal de la página,
+mostrado como un encabezado de nivel 1.
+
+<nav>: Define la sección de navegación de la página.
+
+<ul>: Crea una lista desordenada de elementos.
+
+<li><a href="#inicio">Inicio</a></li>, <li><a href="#productos">Productos</a></li>, 
+<li><a href="#contacto">Contacto</a></li>: Son elementos de la lista que contienen 
+enlaces (<a>) a diferentes secciones de la página, usando IDs 
+(#inicio, #productos, #contacto) como destinos.
+
+<main>: Define el contenido principal de la página, excluyendo la cabecera
+y el pie de página.
+
+<section id="inicio">: Crea una sección con el ID inicio, que se puede usar 
+para enlazar desde la navegación.
+
+<h2>Bienvenido</h2>: Encabezado de nivel 2 que dice "Bienvenido".
+
+<p>Encuentra las mejores laptops al mejor precio, solo en STEVEN PC!!</p>: Párrafo 
+que describe el propósito de la tienda.
+
+<section id="productos">: Crea una sección para mostrar los productos disponibles.
+
+<h2>Nuestros Productos</h2>: Encabezado de nivel 2 que describe la sección de productos.
+
+<div class="producto">: Contenedor para cada producto listado.
+
+<h3>LAPTOP 15 LENOVO AMD RYZEN 3</h3>: Nombre del producto como encabezado de nivel 3.
+
+<a href="LaptopRyzen3.html">: Enlace a una página específica para este producto.
+
+<img src="images/LaptopRyzen3.jpg" alt="LAPTOP 15 LENOVO AMD RYZEN 3">: Imagen del 
+producto con una descripción alternativa.
+
+<p>LAPTOP 15" - LENOVO AMD Ryzen 3 3250U</p>: Descripción corta del producto.
+<p>16 GB DDR4 RAM, 1T SSD, cámara web,</p>, <p>HDMI, WiFi 5, peso ligero gris platino,
+ Windows 10</p>: Detalles técnicos del producto.
+
+<p>Precio: 399.99</p>: Precio del producto.
+
+<section id="contacto">: Sección para permitir a los usuarios contactar a la tienda.
+
+<h2>Contacto</h2>: Encabezado de nivel 2 que indica que es la sección de contacto.
+
+<form id="contacto-form">: Formulario para enviar mensajes.
+
+<label for="nombre">Nombre:</label>: Etiqueta para el campo de nombre.
+
+<input type="text" id="nombre" name="nombre">: Campo de entrada donde el usuario 
+puede escribir su nombre.
+
+<label for="email">Email:</label>: Etiqueta para el campo de correo electrónico.
+
+<input type="email" id="email" name="email">: Campo de entrada donde el usuario 
+puede escribir su correo electrónico.
+
+<label for="mensaje">Mensaje:</label>: Etiqueta para el campo de mensaje.
+
+<textarea id="mensaje" name="mensaje"></textarea>: Área de texto donde el usuario
+puede escribir su mensaje.
+
+<button type="submit">Enviar</button>: Botón para enviar el formulario.
+
+<footer>: Define el pie de página de la página web.
+
+<p>&copy; 2024 Tienda de Laptops</p>: Texto que muestra el año actual y
+el nombre de la tienda, seguido del símbolo de derechos de autor.
+
+<script src="scripts.js"></script>: Enlaza un archivo JavaScript 
+externo (scripts.js) para agregar interactividad y funcionalidad a la página.
+
+
